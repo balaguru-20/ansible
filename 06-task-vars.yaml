@@ -1,0 +1,18 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: # these are called paly level variables
+    COURSE: "Devops with AWS"
+    DURATION: 120HRS
+    TRAINER: Sivakumar
+  tasks:
+    - name: print the local variables
+      vars:
+        COURSE: Ansible
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+  
+  tasks:
+    - name: print the global variable
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
