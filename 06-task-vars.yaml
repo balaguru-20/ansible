@@ -1,14 +1,14 @@
 - name: variables
   hosts: local
   connection: local
-  vars: # these are called paly level variables
+  vars: # these are called paly level variables, global variables
     COURSE: "Devops with AWS"
     DURATION: 120HRS
     TRAINER: Sivakumar
   tasks:
     - name: print the local variables
       vars:
-        COURSE: Ansible
+        COURSE: Ansible #Task level / local variables, accessble only with in the task. task variables can override play level variables
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
   
