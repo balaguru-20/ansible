@@ -12,7 +12,7 @@
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
   
-  tasks:
-    - name: print the global variable
-      ansible.builtin.debug:
-        msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+  # tasks:
+  #   - name: print the global variable
+  #     ansible.builtin.debug:
+  #       msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
