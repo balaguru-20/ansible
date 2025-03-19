@@ -1,0 +1,16 @@
+- name: varibles from prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: COURSE
+    prompt: "please enter course name"
+    private: false # it will show the content when user entering
+  - name: DURATION
+    prompt: please enter duration
+    private: false
+  - name: TRAINER
+    prompt: please enter trainer name
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
