@@ -4,7 +4,7 @@
   vars_prompt:
   - name: COURSE
     prompt: "please enter course name"
-    private: false # it will show the content when user entering
+    private: false # it will show the content when user entering/ that means it is not confidenatial information
   - name: DURATION
     prompt: please enter duration
     private: false
