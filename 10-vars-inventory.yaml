@@ -1,6 +1,5 @@
 - name: variables from inventory
-  hosts: local
-  connection: local
+  hosts: web
   tasks:
   - name: print the course information #no need to mention anything in the play to access this variables
     ansible.builtin.debug:
