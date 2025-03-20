@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREET: "PLAY"
-  vars_files:
-  - file-vars.yaml
+  # vars_files:
+  # - file-vars.yaml
   vars_prompt:
   - name: GREET
     prompt: Enter the greet
@@ -19,3 +19,4 @@
 # PREFERENCES
 #1. Command line
 #2. TASK level
+#3. Files
