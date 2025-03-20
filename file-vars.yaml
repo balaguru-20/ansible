@@ -1,3 +1,4 @@
 COURSE: "DevOps with AWS" # We can give any name to the vars file
 DURATION: 120HRS
 TRAINER: Sivakumar
+GREET: Files
