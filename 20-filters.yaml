@@ -1,0 +1,7 @@
+- name: filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: handle the undefine variable
+    ansible.builtin.debug:
+      msg: "Hello {{ person | default('Ramesh') }}"
