@@ -44,6 +44,6 @@
 
   - name: print the min and max
     vars:
-      numbers: [3,30,25,245,43463]
+      number: [3,30,25,245,43463]
     ansible.builtin.debug:
       msg: "min number is {{ number | min }}, max number is {{ number | max }}"
