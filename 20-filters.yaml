@@ -50,6 +50,6 @@
   
   - name: validate the ip address
     vars:
-      ip: "2455.235.245.255"
+      ip: "2455.235.245.255"  #  pip3.9 install netaddr #we have to install this to check the ip address
     ansible.builtin.debug:
-      msg: "ip address is {{ ip | ansible.builtin.ipaddr }}"
+      msg: "ip address is {{ ip | ansible.utils.ipaddr }}"
