@@ -51,5 +51,5 @@
   - name: validate the ip address
     vars:
       ip: "2455.235.245.255"
-    asible.builtin.debug:
+    ansible.builtin.debug:
       msg: "ip address is {{ ip | ansible.builtin.ipaddr }}"
