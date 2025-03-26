@@ -8,8 +8,7 @@
 
   - name: execute simple ls command
     ansible.builtin.command: ls -ltr
-    register: command_result
-
+    register: command_result # by using register keyword we can save the output of the command
   - name: print the ls -ltr output
     ansible.builtin.debug:
       msg: "{{ command_result }}"
