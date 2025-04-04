@@ -32,7 +32,7 @@
 
   - name: convert upper to lower
     tags:
-    - uppertolower
+    - uppertolower  # tags are useful for to run only this or perticular task
     vars:
       name: "BALA GURAVAIAH"
     ansible.builtin.debug:
