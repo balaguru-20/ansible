@@ -1,5 +1,6 @@
 - name: install and run nginx
-  hosts: all
+  #hosts: all
+  hosts: web
   become: yes
   serial: 4
   tasks:
